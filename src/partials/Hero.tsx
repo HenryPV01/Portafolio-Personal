@@ -1,7 +1,6 @@
 import {
   GradientText,
   HeroAvatar,
-  HeroSocial,
   Section,
 } from 'astro-boilerplate-components';
 
@@ -10,33 +9,37 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          HOLA! <GradientText>BIENVENIDO/A</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          Soy{' '}
+          <GradientText>
+            <b>Henry Ponce </b>
+          </GradientText>
+          , estudiante de Desarrollo de Software en Ecuador. Me apasiona la
+          programación, especialmente el desarrollo web y la creación de
+          videojuegos. Desde joven, descubrí mi vocación por el código, y hoy
+          sigo perfeccionando mis habilidades con el objetivo de ingresar a una
+          empresa de renombre o crear mi propio sistema innovador. Mi motivación
+          está en transformar ideas en soluciones funcionales que marquen la
+          diferencia.
+          <br />
         </>
       }
       avatar={
         <img
-          className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          className="w-66 h-80"
+          src="/assets/images/ess.avif"
           alt="Avatar image"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
+          {/* Elimina o comenta estas líneas para quitar los iconos */}
+          {/* <a href="/">
             <HeroSocial
               src="/assets/images/twitter-icon.png"
               alt="Twitter icon"
@@ -59,7 +62,7 @@ const Hero = () => (
               src="/assets/images/youtube-icon.png"
               alt="Youtube icon"
             />
-          </a>
+          </a> */}
         </>
       }
     />

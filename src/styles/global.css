@@ -1,0 +1,29 @@
+/* Reducir el tamaño de la sección de posts */
+.blog-gallery {
+  height: 700px; /* Ajusta el alto de la sección */
+  overflow: hidden; /* Oculta el contenido que exceda el alto */
+}
+
+/* Alternativa: Reducir la escala de los posts */
+.blog-gallery {
+  transform: scale(0.5); /* Reduce el tamaño al 50% */
+  transform-origin: top; /* Mantiene el contenido alineado arriba */
+}
+
+/* Reducir el tamaño de los posts */
+.grid.grid-cols-1.md\:grid-cols-3 > a {
+  transform: scale(0.5); /* Reduce el tamaño al 50% */
+  transform-origin: top; /* Mantiene el contenido alineado arriba */
+  opacity: 0; /* Opcional: Reduce la opacidad para hacerlos menos visibles */
+}
+
+/* Ocultar visualmente los posts */
+.grid.grid-cols-1.md\:grid-cols-3 > a {
+  opacity: 0; /* Los posts no serán visibles */
+  pointer-events: none; /* Opcional: Desactiva la interacción con los posts */
+}
+
+/* Ajustar el espacio entre los posts */
+.grid.grid-cols-1.md\:grid-cols-3 {
+  gap: 1rem; /* Reduce el espacio entre los posts */
+}
